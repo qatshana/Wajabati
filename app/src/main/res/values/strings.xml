@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wajabati</string>
+    <string-array name="areasList">
+        <item> Hiteen</item>
+        <item> Jerash</item>
+    </string-array>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="10dp"
+        android:background="@color/accentBox"
+        >
+
+        <LinearLayout
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="1dp"
+            android:background="@color/accentBox"
+            android:id="@+id/linearLayout">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/lena30"
+                android:id="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                />
+
+                <TextView
+                    android:id="@+id/viewHead"
+                    android:layout_below="@id/imageView"
+                    android:text="Heading"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/cuisine"
+                    android:layout_below="@id/viewHead"
+                    android:layout_alignParentLeft="true"
+                    android:text="Cuisine"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/textViewDesc"
+                    android:layout_below="@id/cuisine"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
